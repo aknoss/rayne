@@ -2,7 +2,7 @@
 
 ## Overview
 
-Rayne is a 2D adventure game inspired by the classic Zelda series. Developed in C++ and powered by SDL for graphics rendering
+Rayne is a 2D adventure game inspired by the classic Zelda series. Developed in C++ and powered by SDL for graphics rendering.
 
 ## Installation
 
@@ -21,4 +21,4 @@ cmake --build build
 
 ## Running
 
-Executables are available in the build directory
+Executables are available in the build directory.
