@@ -1,4 +1,4 @@
-#include "GameManager.h"
+#include "game_manager.h"
 #include <SDL3/SDL.h>
 
 GameManager::GameManager()
