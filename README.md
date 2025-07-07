@@ -21,4 +21,8 @@ cmake --build build
 
 ## Running
 
-Executables are available in the build directory.
+Executable is available in the build directory.
+
+```
+./build/rayne
+```
