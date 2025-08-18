@@ -1,12 +1,14 @@
 #ifndef GAME_MANAGER_H
 #define GAME_MANAGER_H
 
+#include "input_manager.h"
 #include "renderer_manager.h"
 #include <SDL3/SDL.h>
 
 class Game {
 private:
   RendererManager rendererManager;
+  InputManager inputManager;
   bool running;
   void handleEvents();
   void update();
