@@ -19,6 +19,16 @@ RendererManager::RendererManager() : window(nullptr), renderer(nullptr) {
   SDL_RenderPresent(renderer);
 }
 
-RendererManager::~RendererManager() {}
+RendererManager::~RendererManager() {
+  if (renderer) {
+    SDL_DestroyRenderer(renderer);
+    renderer = nullptr;
+  }
+  if (window) {
+    SDL_DestroyWindow(window);
+    window = nullptr;
+  }
+  SDL_Quit();
+}
 
 void RendererManager::waitNextFrame() { SDL_Delay(FRAME_DELAY_MS); }
