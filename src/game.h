@@ -1,21 +1,22 @@
 #ifndef GAME_MANAGER_H
 #define GAME_MANAGER_H
 
-#include "render_manager.h"
+#include "renderer_manager.h"
 #include <SDL3/SDL.h>
 
-class GameManager {
+class Game {
 private:
-  RenderManager renderManager;
+  RendererManager rendererManager;
   bool running;
   void handleEvents();
   void update();
 
 public:
-  GameManager();
-  ~GameManager();
+  Game();
+  ~Game();
 
-  int run();
+  void run();
+  void exit();
 };
 
 #endif // GAME_MANAGER_H

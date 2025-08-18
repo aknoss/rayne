@@ -6,8 +6,8 @@ add_subdirectory(vendored/SDL)
 add_executable(
   rayne 
   src/main.cpp 
-  src/game_manager.cpp 
-  src/render_manager.cpp
+  src/game.cpp 
+  src/renderer_manager.cpp
 )
 
 target_link_libraries(rayne PRIVATE SDL3::SDL3)

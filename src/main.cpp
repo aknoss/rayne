@@ -1,6 +1,7 @@
-#include "game_manager.h"
+#include "game.h"
 
 int main() {
-  GameManager gameManager;
-  return gameManager.run();
+  Game game;
+  game.run();
+  return 0;
 }

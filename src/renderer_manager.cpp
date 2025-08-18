@@ -1,7 +1,7 @@
-#include "render_manager.h"
+#include "renderer_manager.h"
 #include <stdexcept>
 
-RenderManager::RenderManager() : window(nullptr), renderer(nullptr) {
+RendererManager::RendererManager() : window(nullptr), renderer(nullptr) {
   SDL_SetAppMetadata(APP_NAME, APP_VERSION, APP_IDENTIFIER);
 
   if (!SDL_Init(SDL_INIT_VIDEO)) {
@@ -19,6 +19,6 @@ RenderManager::RenderManager() : window(nullptr), renderer(nullptr) {
   SDL_RenderPresent(renderer);
 }
 
-RenderManager::~RenderManager() {}
+RendererManager::~RendererManager() {}
 
-void RenderManager::waitNextFrame() { SDL_Delay(FRAME_DELAY_MS); }
+void RendererManager::waitNextFrame() { SDL_Delay(FRAME_DELAY_MS); }

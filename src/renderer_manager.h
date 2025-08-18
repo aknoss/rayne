@@ -12,15 +12,15 @@ constexpr int TARGET_FPS{60};
 constexpr int FRAME_DELAY_MS{1000 / TARGET_FPS};
 constexpr float FRAME_DELAY_S{(float)FRAME_DELAY_MS / 1000};
 
-class RenderManager {
+class RendererManager {
 
 private:
   SDL_Window *window;
   SDL_Renderer *renderer;
 
 public:
-  RenderManager();
-  ~RenderManager();
+  RendererManager();
+  ~RendererManager();
 
   void waitNextFrame();
 };
