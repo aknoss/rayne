@@ -10,8 +10,6 @@ private:
   RendererManager rendererManager;
   InputManager inputManager;
   bool running;
-  void handleEvents();
-  void update();
 
 public:
   Game();

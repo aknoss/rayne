@@ -8,6 +8,7 @@ add_executable(
   src/main.cpp 
   src/game.cpp 
   src/renderer_manager.cpp
+  src/input_manager.cpp
 )
 
 target_link_libraries(rayne PRIVATE SDL3::SDL3)
